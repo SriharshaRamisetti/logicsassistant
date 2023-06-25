@@ -1,0 +1,42 @@
+pyautogui module
+#pyautogui.size()---------------------------:describes the size of the widow as width,height
+#pyautogui.position()-----------------------:describes the current position of the cursor (as width,height)
+#pyautogui.moveTo(width,height,duration)----:moves the cursor to the given location (width,height given as input) with the speed of duration mentioned
+#pyautogui.moveRel(width,height,duration)---:moves the cursor to the speicified  position from the current position of the cursor
+#pyautogui.click(x,y,clicks,interval,button):
+				@x-it is the x-coordinate of the point to reach during x direction
+				@y-it is the y-coordinate of the point to reach during y direction
+				@clicks-it is the number of clicks to perform when the cursor reaches the desired location
+				@interval-it is the time intervals between clicks
+				@button-it specifies the button that we would to press when the cursor gets to the point on screen.we can pass right ,left, and middle values
+#some type of functions in pyautogui module
+#pyauto.rightclick(x,y)
+#pyautogui.tripleclick(x,y)
+#pyautogui.middleclick(x,y)
+#pyautogui.doubleclick(x,y)
+#pyautogui.mouseUp(x,y,button)--------------:mouseup 
+#pyautogui.mouseDown(x,y,button)------------:mouse down can be achieved by this function
+##scroll()-function
+#pyautogui.scroll(amount_to_scroll,x=x_movement,y=y_movement)-:it is used to scroll with the help of mouse
+#pyautogui.KEYBOARD_KEYS--gives the available keyboard keys using the python script
+#pyautogui.typewrite(text,interval) - it is used to write the text in the in a textfield.
+				@text-text to enter
+				@interval - interval is a time in seconds between each key stroke.
+#pyautogui.hotkey()------------------------:it is used to perform more than one operatoins in keyboard
+#############SCREENSHOT###########
+pyautogui.screenshot('file_path')----:through this we can able to take screenshot and store it in the desired path location
+#pyautogui.alert(text,title,button)-----:it is used to display message box with the some text message and OK button. 
+		@text-----:text is the text which we need to display in alert box
+		@title----:title is used to give name to alert box
+		@button---:button_name which is used to close the alert box
+#pyautogui.confirm(text,title,buttons)---:it is used to give two or more number of buttons to the alert box
+#pyautogui.prompt()--------:it is used to enter the details like name etc,(in this title is taken default and we will get the alert box with ok and cancel buttons by default
+#pyautogui.password(text,title='default',mask='*')----:
+			@text---:text to display on the dialog box
+			@title--:basically taken default
+			@mask---:the symbol with which it show to the user
+#pygui.press()----------:it is used to press a keys in keyboard
+#pyautogui.hold()-------: it is used to hold the key and this will be held for the duration of with context block
+ex--:
+	with pyautogui.hold('shift'):
+		pyautogui.press(['left','left','left'])
