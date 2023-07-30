@@ -80,7 +80,7 @@ def gmailsend():
         pygui.typewrite(c,0.01)
 
         time.sleep(2)
-        pygui.click(1150,235,2,0.01,button='left')
+        pygui.click(1150,235,2,0.01,button='left')#the values in the click are the locations of the specific app are icon according to my pc
         pygui.typewrite(subject,0.01)
         time.sleep(2)
         pygui.click(1150,265,2,0.01,button='left')
